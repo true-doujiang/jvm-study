@@ -1,0 +1,205 @@
+Classfile /F:/testJvm/org/fenixsoft/polymorphic/StaticDispatch.class
+  Last modified 2017-8-11; size 1548 bytes
+  MD5 checksum f740e4f3cd14b4e28e9d4b3036c2c368
+  Compiled from "StaticDispatch.java"
+public class org.fenixsoft.polymorphic.StaticDispatch extends org.fenixsoft.polymorphic.Parent implements org.fenixsoft.polymorphic.MyInterface
+  SourceFile: "StaticDispatch.java"
+  InnerClasses:
+       static #24= #11 of #13; //Woman=class org/fenixsoft/polymorphic/StaticDispatch$Woman of class org/fenixsoft/polymorphic/StaticDispatch
+       static #26= #9 of #13; //Man=class org/fenixsoft/polymorphic/StaticDispatch$Man of class org/fenixsoft/polymorphic/StaticDispatch
+       static abstract #28= #27 of #13; //Human=class org/fenixsoft/polymorphic/StaticDispatch$Human of class org/fenixsoft/polymorphic/StaticDispatch
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #22.#44        //  org/fenixsoft/polymorphic/Parent."<init>":()V
+   #2 = Fieldref           #45.#46        //  java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #47            //  hello guy!
+   #4 = Methodref          #48.#49        //  java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = String             #50            //  hello gentleman!
+   #6 = String             #51            //  hello lady!
+   #7 = String             #52            //  private Method use invokespecial
+   #8 = String             #53            //  interface Method use invokeinterface
+   #9 = Class              #54            //  org/fenixsoft/polymorphic/StaticDispatch$Man
+  #10 = Methodref          #9.#44         //  org/fenixsoft/polymorphic/StaticDispatch$Man."<init>":()V
+  #11 = Class              #55            //  org/fenixsoft/polymorphic/StaticDispatch$Woman
+  #12 = Methodref          #11.#44        //  org/fenixsoft/polymorphic/StaticDispatch$Woman."<init>":()V
+  #13 = Class              #56            //  org/fenixsoft/polymorphic/StaticDispatch
+  #14 = Methodref          #13.#44        //  org/fenixsoft/polymorphic/StaticDispatch."<init>":()V
+  #15 = Methodref          #13.#57        //  org/fenixsoft/polymorphic/StaticDispatch.sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Human;)V
+  #16 = Methodref          #13.#58        //  org/fenixsoft/polymorphic/StaticDispatch.sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Man;)V
+  #17 = Methodref          #13.#59        //  org/fenixsoft/polymorphic/StaticDispatch.sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Woman;)V
+  #18 = Methodref          #13.#60        //  org/fenixsoft/polymorphic/StaticDispatch.parentMethod:()V
+  #19 = Methodref          #13.#61        //  org/fenixsoft/polymorphic/StaticDispatch.myMethod:()V
+  #20 = Methodref          #13.#62        //  org/fenixsoft/polymorphic/StaticDispatch.interfaceMethod:()V
+  #21 = Methodref          #22.#60        //  org/fenixsoft/polymorphic/Parent.parentMethod:()V
+  #22 = Class              #63            //  org/fenixsoft/polymorphic/Parent
+  #23 = Class              #64            //  org/fenixsoft/polymorphic/MyInterface
+  #24 = Utf8               Woman
+  #25 = Utf8               InnerClasses
+  #26 = Utf8               Man
+  #27 = Class              #65            //  org/fenixsoft/polymorphic/StaticDispatch$Human
+  #28 = Utf8               Human
+  #29 = Utf8               <init>
+  #30 = Utf8               ()V
+  #31 = Utf8               Code
+  #32 = Utf8               LineNumberTable
+  #33 = Utf8               sayHello
+  #34 = Utf8               (Lorg/fenixsoft/polymorphic/StaticDispatch$Human;)V
+  #35 = Utf8               (Lorg/fenixsoft/polymorphic/StaticDispatch$Man;)V
+  #36 = Utf8               (Lorg/fenixsoft/polymorphic/StaticDispatch$Woman;)V
+  #37 = Utf8               myMethod
+  #38 = Utf8               interfaceMethod
+  #39 = Utf8               main
+  #40 = Utf8               ([Ljava/lang/String;)V
+  #41 = Utf8               parentMethod
+  #42 = Utf8               SourceFile
+  #43 = Utf8               StaticDispatch.java
+  #44 = NameAndType        #29:#30        //  "<init>":()V
+  #45 = Class              #66            //  java/lang/System
+  #46 = NameAndType        #67:#68        //  out:Ljava/io/PrintStream;
+  #47 = Utf8               hello guy!
+  #48 = Class              #69            //  java/io/PrintStream
+  #49 = NameAndType        #70:#71        //  println:(Ljava/lang/String;)V
+  #50 = Utf8               hello gentleman!
+  #51 = Utf8               hello lady!
+  #52 = Utf8               private Method use invokespecial
+  #53 = Utf8               interface Method use invokeinterface
+  #54 = Utf8               org/fenixsoft/polymorphic/StaticDispatch$Man
+  #55 = Utf8               org/fenixsoft/polymorphic/StaticDispatch$Woman
+  #56 = Utf8               org/fenixsoft/polymorphic/StaticDispatch
+  #57 = NameAndType        #33:#34        //  sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Human;)V
+  #58 = NameAndType        #33:#35        //  sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Man;)V
+  #59 = NameAndType        #33:#36        //  sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Woman;)V
+  #60 = NameAndType        #41:#30        //  parentMethod:()V
+  #61 = NameAndType        #37:#30        //  myMethod:()V
+  #62 = NameAndType        #38:#30        //  interfaceMethod:()V
+  #63 = Utf8               org/fenixsoft/polymorphic/Parent
+  #64 = Utf8               org/fenixsoft/polymorphic/MyInterface
+  #65 = Utf8               org/fenixsoft/polymorphic/StaticDispatch$Human
+  #66 = Utf8               java/lang/System
+  #67 = Utf8               out
+  #68 = Utf8               Ljava/io/PrintStream;
+  #69 = Utf8               java/io/PrintStream
+  #70 = Utf8               println
+  #71 = Utf8               (Ljava/lang/String;)V
+{
+  public org.fenixsoft.polymorphic.StaticDispatch();
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #1                  // Method org/fenixsoft/polymorphic/Parent."<init>":()V
+         4: return        
+      LineNumberTable:
+        line 16: 0
+        line 20: 4
+
+  public void sayHello(org.fenixsoft.polymorphic.StaticDispatch$Human);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String hello guy!
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return        
+      LineNumberTable:
+        line 23: 0
+        line 24: 8
+
+  public void sayHello(org.fenixsoft.polymorphic.StaticDispatch$Man);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #5                  // String hello gentleman!
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return        
+      LineNumberTable:
+        line 26: 0
+        line 27: 8
+
+  public void sayHello(org.fenixsoft.polymorphic.StaticDispatch$Woman);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #6                  // String hello lady!
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return        
+      LineNumberTable:
+        line 29: 0
+        line 30: 8
+
+  public void interfaceMethod();
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #8                  // String interface Method use invokeinterface
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return        
+      LineNumberTable:
+        line 36: 0
+        line 37: 8
+
+  public static void main(java.lang.String[]);
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: new           #9                  // class org/fenixsoft/polymorphic/StaticDispatch$Man
+         3: dup           
+         4: invokespecial #10                 // Method org/fenixsoft/polymorphic/StaticDispatch$Man."<init>":()V
+         7: astore_1      
+         8: new           #11                 // class org/fenixsoft/polymorphic/StaticDispatch$Woman
+        11: dup           
+        12: invokespecial #12                 // Method org/fenixsoft/polymorphic/StaticDispatch$Woman."<init>":()V
+        15: astore_2      
+        16: new           #13                 // class org/fenixsoft/polymorphic/StaticDispatch
+        19: dup           
+        20: invokespecial #14                 // Method "<init>":()V
+        23: astore_3      
+        24: aload_3       
+        25: aload_1       
+        26: invokevirtual #15                 // Method sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Human;)V
+        29: aload_3       
+        30: aload_2       
+        31: invokevirtual #15                 // Method sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Human;)V
+        34: aload_3       
+        35: aload_1       
+        36: checkcast     #9                  // class org/fenixsoft/polymorphic/StaticDispatch$Man
+        39: invokevirtual #16                 // Method sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Man;)V
+        42: aload_3       
+        43: aload_2       
+        44: checkcast     #11                 // class org/fenixsoft/polymorphic/StaticDispatch$Woman
+        47: invokevirtual #17                 // Method sayHello:(Lorg/fenixsoft/polymorphic/StaticDispatch$Woman;)V
+        50: aload_3       
+        51: invokevirtual #18                 // Method parentMethod:()V
+        54: aload_3       
+        55: invokespecial #19                 // Method myMethod:()V
+        58: aload_3       
+        59: invokevirtual #20                 // Method interfaceMethod:()V
+        62: return        
+      LineNumberTable:
+        line 40: 0
+        line 41: 8
+        line 42: 16
+        line 44: 24
+        line 45: 29
+        line 47: 34
+        line 48: 42
+        line 50: 50
+        line 51: 54
+        line 52: 58
+        line 53: 62
+
+  public void parentMethod();
+    flags: ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #21                 // Method org/fenixsoft/polymorphic/Parent.parentMethod:()V
+         4: return        
+      LineNumberTable:
+        line 16: 0
+}
